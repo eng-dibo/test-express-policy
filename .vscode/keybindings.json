@@ -1,0 +1,16 @@
+// keyboard shortcuts
+// keyblindings doesn't work for workspace, copy this file to user settings to work
+// to rempve the default shortcut, prepend '-' to the command. example: `{"command": "-editor.action.deleteLines",...}`
+[
+  {
+    // duplicate selection
+    "key": "ctrl+d",
+    "command": "editor.action.duplicateSelection"
+  },
+  {
+    // select the next similar
+    // to select all semialr : ctr+shift+L
+    "key": "alt+d",
+    "command": "editor.action.addSelectionToNextFindMatch"
+  }
+]
