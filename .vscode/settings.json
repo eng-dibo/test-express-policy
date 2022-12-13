@@ -1,0 +1,72 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // format the code with prettier then fix with eslint
+  // todo: get full list of available actions from all plugins and vscode
+  "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.eslint"],
+  "files.autoSave": "off",
+  "editor.fastScrollSensitivity": 3,
+  "editor.mouseWheelZoom": true,
+  "editor.showFoldingControls": "always",
+  "editor.stablePeek": true,
+  "editor.fontSize": 16,
+  "diffEditor.codeLens": true,
+  "diffEditor.renderSideBySide": false,
+  "window.title": "${dirty}${rootName} ${activeEditorShort}",
+  "explorer.confirmDelete": false,
+  "explorer.decorations.badges": false,
+  "git.allowForcePush": true,
+  "angular.enable-strict-mode-prompt": false,
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "editor.minimap.enabled": false,
+  "editor.dragAndDrop": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  // cli options for eslint. see package.scripts.lint:eslint
+  "eslint.lintTask.options": "** --fix --config=.eslintrc.js --ext=.* --ignore-path=.gitignore",
+  // languages that eslint will be activated for
+  // todo: enable for all languages,
+  // ignorePatterns option ignores files that eslint shouldn't be activated for
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown",
+    "json",
+    "css",
+    "scss"
+  ],
+  "eslint.useESLintClass": true,
+  "cSpell.words": [
+    "adsense",
+    "appspot",
+    "dompurify",
+    "formly",
+    "gcloud",
+    "hookable",
+    "hotjar",
+    "postback",
+    "prerender",
+    "renovate",
+    "upsert"
+  ],
+  // when scrolling down, the function diffenition will be sticked
+  // so you know which function you are scrolling in
+  "editor.stickyScroll.enabled": true,
+  "editor.stickyScroll.maxLineCount": 5,
+  "editor.suggest.matchOnWordStartOnly": true,
+  // prompt to change the relative files paths when moving the md file to another location
+  "markdown.experimental.updateLinksOnFileMove.enabled": "prompt",
+  // Bring uncommitted changes with you when moving across development environments
+  "workbench.experimental.editSessions.autoStore": "onShutdown",
+  "workbench.experimental.editSessions.enabled": true,
+  // maximum files to be opened
+  "vscode-open-files-in-directory.maxFiles": 1000,
+  // Maximum depth to traverse through subfolders
+  "vscode-open-files-in-directory.maxRecursiveDepth": 50,
+  "task.allowAutomaticTasks": "on"
+}
